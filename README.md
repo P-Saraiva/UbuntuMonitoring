@@ -8,7 +8,7 @@ This guide helps you set up a complete monitoring stack on any Ubuntu machine us
 - Ubuntu (20.04+ recommended)
 - Docker & Docker Compose
 
-### Install Docker & Docker Compose
+### If not installed: Install Docker & Docker Compose
 ```sh
 sudo apt update && sudo apt install -y docker.io docker-compose
 sudo systemctl enable --now docker
@@ -21,7 +21,7 @@ sudo usermod -aG docker $USER
 ## 1. Clone or Prepare the Project Directory
 
 ```sh
-mkdir ~/monitoring && cd ~/monitoring
+mkdir ~/UbuntuMonitoring && cd ~/UbuntuMonitoring
 # Place docker-compose.yml, prometheus.yml, and promtail-config.yaml here
 ```
 
