@@ -27,49 +27,13 @@ mkdir ~/monitoring && cd ~/monitoring
 
 ---
 
-## 2. Create Configuration Files
+## 2. Configuration Files Must be:
 
 ### docker-compose.yml
-(Already provided in this repo)
 
-### prometheus.yml
-```
-global:
-  scrape_interval: 15s
-
-scrape_configs:
-  - job_name: 'node'
-    static_configs:
-      - targets: ['node-exporter:9100']
-
-  - job_name: 'promtail'
-    static_configs:
-      - targets: ['promtail:9080']
-```
+### prometheus/prometheus.yml
 
 ### promtail-config.yaml
-```
-server:
-  http_listen_port: 9080
-  grpc_listen_port: 0
-
-positions:
-  filename: /tmp/positions.yaml
-
-clients:
-  - url: http://loki:3100/loki/api/v1/push
-
-scrape_configs:
-  - job_name: system
-    static_configs:
-      - targets:
-          - localhost
-        labels:
-          job: varlogs
-          __path__: /var/log/*.log
-```
-
----
 
 ## 3. Start the Monitoring Stack
 
