@@ -74,7 +74,7 @@ scrape_configs:
 ## 3. Start the Monitoring Stack
 
 ```sh
-docker-compose up -d
+docker compose up -d
 ```
 
 ---
@@ -154,13 +154,13 @@ docker-compose up -d
 ## 9. Stopping the Stack
 
 ```sh
-docker-compose down
+docker compose down
 ```
 
 ---
 
 ## 10. Troubleshooting
-- Check logs: `docker-compose logs <service>`
+- Check logs: `docker compose logs <service>`
 - Ensure ports 3000, 9090, 9100, 3100 are open
 
 ---
