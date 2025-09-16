@@ -45,8 +45,8 @@ docker-compose up -d
 
 ## 4. Access the Dashboards
 
-- **Grafana:** http://<your-server-ip>:3000 (default: admin / admin)
-- **Prometheus:** http://<your-server-ip>:9090
+- **Grafana:** http://your-server-ip:3000 (default: admin / admin)
+- **Prometheus:** http://your-server-ip:9090
 
 ---
 
