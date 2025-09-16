@@ -31,7 +31,7 @@ mkdir ~/monitoring && cd ~/monitoring
 
 ### docker-compose.yml
 
-### prometheus/prometheus.yml
+### prometheus.yml
 
 ### promtail-config.yaml
 
@@ -63,7 +63,7 @@ docker-compose up -d
 - Go to Dashboards → Import
 - Use dashboard IDs from [Grafana.com](https://grafana.com/grafana/dashboards/):
   - Node Exporter Full: `1860`
-  - Loki Syslog: `13639` (or search for "Loki" dashboards)
+  - Loki Syslog: `13639`
 
 ---
 
